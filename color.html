@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color</title>
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+        #root{
+            width: 500px;
+            height: 500px;   
+        margin-left: 582px;
+        margin-top: 300px;
+        }
+        #box{
+            width: 320px;
+           height: 30px;
+        }
+        h2{
+            margin-bottom: 45px;
+            margin-left: 45px;
+        }
+        p{
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h2>Hello world</h2>
+        <p>choose color</p>
+        <select name="" id="box" onclick="change(value)">
+            <option value="red">red</option>
+            <option value="green">green</option>
+            <option value="orange">orange</option>
+            <option value="pink">pink</option>
+            <option value="blue">blue</option>
+
+        </select>
+    </div>
+    <script>
+        function change(v){
+      document.body.style.backgroundColor=v
+        }
+    </script>
+</body>
+</html>
