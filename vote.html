@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .main{
+            width: 204px;
+           height: 50px;
+           border: 1px solid;
+           display: flex;
+           margin-left: 14px;
+           margin-top: 15px;
+         background-color: #a09b6f;
+        }
+        h3{
+            margin-right: 25px;
+            padding-top: 12px;
+            font-size: 20px;
+        }
+        p{
+            padding-top: 12px;
+            margin-right: 62px;
+            font-size: 20px;
+        }
+        button{
+            border: 0px;
+          background-color: #a09b6f;
+          color: green;
+          font-size: 20px;
+        }
+        #b2{
+          padding-left: 20px;
+        }
+        #b3{
+        padding-left: 26px;
+        }
+        #b4{
+            padding-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="root">
+        <h2>Vote for Your Language!</h2>
+        <div class="main">
+            <h3 id="count"> </h3>
+            <p>python</p>
+            <button onclick="inc()">Click</button>
+        </div>
+        <div class="main">
+            <h3 id="count2"> </h3>
+            <p>Java</p>
+            <button id="b2" onclick="inc2()">Click</button>
+        </div>
+        <div class="main">
+            <h3 id="count3"> </h3>
+            <p>php</p>
+            <button id="b3" onclick="inc3()">Click</button>
+        </div>
+        <div class="main">
+            <h3 id="count4"> </h3>
+            <p>Go</p>
+            <button id="b4" onclick="inc4()">Click</button>
+        </div>
+    </div>
+    <script>
+        let data=0
+        document.getElementById("count").innerText=data
+        function inc(){
+           data=data+1
+            document.getElementById("count").innerText=data
+        }
+        var data2=0
+        document.getElementById("count2").innerText=data2
+        function inc2(){
+           data2=data2+1
+            document.getElementById("count2").innerText=data2
+        }
+        var data3=0
+        document.getElementById("count3").innerText=data3
+        function inc3(){
+           data3=data3+1
+            document.getElementById("count3").innerText=data3
+        }
+        var data4=0
+        document.getElementById("count4").innerText=data4
+        function inc4(){
+           data4=data4+1
+            document.getElementById("count4").innerText=data4
+        }
+    </script>
+</body>
+</html>
